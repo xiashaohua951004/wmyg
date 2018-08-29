@@ -1,0 +1,507 @@
+body {
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    height: 677px;
+    position: relative;
+    overflow: hidden;
+}
+
+#flash {
+    height: 677px;
+    cursor: pointer;
+}
+
+#pic li {
+    width: 100%;
+    height: 677px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+#pic li img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+
+#num {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -78px;
+    z-index: 2;
+    cursor: default;
+}
+
+#num li {
+    float: left;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #587ca3;
+    margin: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 14px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+#num li.current {
+    background: white;
+
+}
+
+.banner .notice {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    height: 50px;
+    left: 0;
+    line-height: 50px;
+    background: rgba(0, 0, 0, .3);
+    z-index: 6;
+    cursor: pointer;
+}
+
+.banner .notice:hover {
+    background: rgba(0, 0, 0, .6);
+}
+
+/*<<<<<<< .mine*/
+
+/*.banner .notice .notice_1 {*/
+/*||||||| .r2625*/
+/*.banner .notice .notice_1 {*/
+/*=======*/
+/* .banner .notice .notice_1 {
+>>>>>>> .r2641
+<<<<<<< .mine
+    float: left;
+    width: 800px;
+||||||| .r2625
+  float: left;
+  width: 800px;
+=======
+  float: left;
+<<<<<<< .mine
+  width: 500px;
+||||||| .r2612
+  width: 330px;
+=======
+  width: 800px;
+>>>>>>> .r2641
+} */
+
+.banner .notice .notice_1 {
+
+    width: 500px;
+
+}
+
+.banner .notice .notice_1 i {
+    display: block;
+    float: left;
+}
+.banner .notice .notice_1 i img {
+    float: left;
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+.banner .notice .notice_1 i .gonggao{
+    display: block;
+    line-height: 50px;
+    float: left;
+  width: 80px;
+    height: 50px;
+    color: white;
+    white-space:nowrap;
+    font-size: 16px;
+}
+.banner .notice .notice_1 .regiset {
+    float: left;
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    width: 235px;
+    padding-left: 8px;
+    overflow: hidden;
+    background: red;
+    overflow: hidden;
+}
+
+/* .banner .notice .notice_1 .regiset span{
+  position: absolute;
+
+
+  display: block;
+  width: 100%;
+} */
+
+.banner .notice .notice_2 {
+    width: 130px;
+    margin-left: 604px;
+    float: left;
+
+}
+
+.banner .notice .notice_2 a {
+    color: white;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 695px;
+}
+
+.container .left {
+    width: 467px;
+    margin-top: 183px;
+    margin-left: 120px;
+    float: left;
+}
+
+.container .left h2 {
+    font-size: 64px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.container .left h4 {
+    font-size: 24px;
+    color: #333333;
+}
+
+.container .left div {
+    margin-top: 50px;
+}
+
+.container .left div a {
+    display: block;
+    width: 215px;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 26px;
+    margin-top: 54px;
+}
+
+.container .left div a {
+    background: #10417E;
+    margin-top: 20px;
+}
+
+.container .left div a:hover {
+    background: #477CBD;
+
+}
+
+.container .rihgt {
+    width: 45%;
+    position: relative;
+    margin-left: 38px;
+    float: left;
+
+}
+
+.container .rihgt .main {
+    margin-top: 70px;
+    margin-left: 150px;
+    width: 320px;
+    height: 607px;
+    float: left;
+}
+
+.container .rihgt .menu {
+    float: right;
+    margin-top: 480px;
+    position: fixed;
+}
+
+.container .rihgt .menu ul li {
+    margin-top: 20px;
+}
+
+.container .rihgt .menu ul li:nth-child(1) {
+    margin-top: 0px;
+}
+
+.content_1 {
+    height: 600px;
+    /* background: #f3fbf9; */
+    background: #F4FAFA;
+    padding-top: 70px;
+
+    position: relative;
+}
+
+.content_1 .container {
+    height: 110px;
+}
+
+.content_1 .container .title {
+    width: 1210px;
+    height: 110px;
+    text-align: center;
+}
+
+.content_1 .container .title h2 {
+    width: 100%;
+    font-size: 36px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.content_1 .container .title span {
+    font-size: 16px;
+    color: #333333;
+    display: block;
+    margin-top: -24px;
+}
+
+.content_1 .containerr {
+    width: 1210px;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 595px;
+}
+
+.content_1 .containerr .menu ul li {
+    float: left;
+    width: 402px;
+    text-align: center;
+}
+
+.content_1 .containerr .menu ul li a {
+    margin: 0 auto;
+    display: block;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background: white;
+    cursor: default;
+    box-shadow: 0px 6px 20px -4px rgba(16, 65, 126, 0.2);
+}
+
+.content_1 .containerr .menu ul li a img {
+    margin-top: 50px;
+}
+
+.content_1 .containerr .menu ul li b {
+    font-size: 26px;
+    color: #333;
+    font-weight: 500;
+}
+
+.content_1 .containerr .menu ul li span {
+    display: block;
+    font-size: 20px;
+    padding-top: 9px;
+}
+
+.newList {
+    height: 695px;
+
+}
+
+.newList .containerq {
+    width: 1210px;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+.newList .containerq .title {
+
+    width: 100%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.newList .containerq .title h3 {
+    width: 1210px;
+    font-size: 36px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.newList .containerq .title span {
+    color: #333333;
+    font-size: 16px;
+    display: block;
+    margin-top: -24px;
+
+}
+
+.activetu {
+    color: #10427a;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #10427a;
+}
+
+.newList .containerq .tablist {
+    margin-top: -30px;
+    box-sizing: border-box;
+}
+
+.newList .containerq .tablist li a {
+    float: left;
+    width: 360px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0 21px;
+    box-shadow: 0px 0px 27px #ccc;
+    border-radius: 5px;
+    transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    position: relative;
+
+}
+
+.newList .containerq .tablist li a:hover {
+
+    transform: scale(1.1, 1.1);
+    /* height: 420px;
+    width: 370px; */
+
+}
+
+.newList .containerq .tablist li a div {
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 18px;
+}
+
+.newList .containerq .tablist li a div b {
+    display: block;
+    font-size: 19px;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #333;
+}
+
+.newList .containerq .tablist li a div p {
+    font-size: 14px;
+    margin-top: -5px;
+    line-height: 22px
+   
+}
+
+.newList .containerq .more a {
+    display: block;
+    width: 120px;
+    float: right;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #10417E;
+    padding-right: 15px;
+}
+
+.newList .containerq .more a:hover {
+    color: #477dbc;
+}
+
+.ding {
+    display: block;
+    height: 260px;
+    position: fixed;
+    bottom: 44px;
+    right: 39px;
+    z-index: 9999;
+}
+
+.ding .menu ul li {
+    margin-top: 20px;
+}
+
+.ding .menu ul li.li1 {
+    margin-bottom: 0px;
+}
+
+.ding .menu ul li.li3 {
+    display: none;
+}
+
+.ding .menu ul li a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.ding .menu ul li a span {
+    box-sizing: border-box;
+    display: none;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 16px;
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+
+    text-align: center;
+    padding: 10px;
+    line-height: 20px;
+    box-shadow: 0px 2px 6px 2px rgba(16, 65, 126, 0.2);
+    
+
+}
+
+.tel {
+    box-sizing: border-box;
+    display: none;
+    width: 212px;
+    height: 78px;
+    background: url("../img/index/tel.png") no-repeat;
+    position: absolute;
+    left: -210px;
+    top: 18px;
+    line-height: 67px;
+    padding-left: 36px;
+    font-size: 18px;
+    color: #333333;
+}
+
+.tel em {
+    display: block;
+    /* font-size: 70px; */
+    position: absolute;
+    left: 158px;
+    top: -3px;
+    font-size: 65px;
+    color: #477dbc;
+}
+
+.main_a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    padding-left: 8px;
+    text-overflow:ellipsis;overflow:hidden;white-space:nowrap;
+}
+
+.swiper-slide {
+    width: 700px;
+}

@@ -1,0 +1,59 @@
+.weibu{
+    width: 100%;
+    height: 454px;
+    background: #10417e;
+   
+}
+ .weibu .container .weibu_1{
+    margin-top: 75px;
+    float: left;
+    height: 260px;
+  }
+  .weibu .container .weibu_1 ul li {
+    float: left;
+    width: 173px;
+  }
+  .weibu .container .weibu_1 ul li:nth-child(1) {
+    margin-left: 0px;
+  }
+  .weibu .container .weibu_1 ul li a {
+    color: white;
+    font-size: 20px;
+  }
+  .weibu .container .weibu_1 ul li .list li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #f4f7f9;
+  }
+  .weibu .container .weibu_2{
+ 
+    margin-top: 75px;
+    height: 260px;
+  }
+  .weibu .container .weibu_2 ul li {
+    float: left;
+    width: 100px;
+  }
+  .weibu .container .weibu_2 ul li img{
+    float: left;
+    width: 100%;
+  }
+  .weibu .container .weibu_2 ul li a span {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+  }
+  .weibu .container .weibu_2 ul li:nth-child(2) {
+    margin-left: 45px;
+  }
+  .weibu .container .footer_bottom p {
+    text-align: center;
+    font-size: 14px;
+    color: #7c9bc0;
+  }
+  

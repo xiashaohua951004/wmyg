@@ -1,0 +1,313 @@
+
+.containe {
+    width: 100%;
+    border-top: 1px solid #CCCCCC;
+}
+
+.rown {
+    width: 1210px;
+    margin: 0 auto;
+    margin-top: 27px;
+    margin-bottom: 120px;
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+    font-size: 20px;
+    margin-right: 47px;
+}
+
+.left > .about {
+    width: 259px;
+    height: 93px;
+    background-color: #00A161;
+    text-align: center;
+    color: #ffffff;
+    padding: 24px 0 22px 0;
+    box-sizing: border-box;
+
+}
+
+.left > .about > p:nth-child(2) {
+    font-size: 14px;
+}
+
+.left ul li a {
+    display: block;
+    width: 259px;
+    height: 63px;
+    line-height: 63px;
+    text-align: center;
+    background-color: #F3F2F3;
+    color: #10417E;
+}
+
+.left ul li a:hover{
+    background-color: #10417E;
+    color: #ffffff;
+}
+.right {
+    width: 898px;
+    float: right;
+}
+
+.right > p {
+    font-size: 16px;
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.contain {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+/*公司简介样式*/
+.contain-left {
+    float: left;
+    width: 450px;
+}
+
+.contain-left > h3 {
+    width: 100%;
+    font-size: 36px;
+    padding: 42px 0 39px 0;
+    font-weight: 500;
+    color: #333333;
+}
+
+.contain-left > p{
+    width: 404px;
+    line-height: 36px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.left-img {
+
+    width: 100%;
+    height: 612px;
+}
+.right-img{
+    width: 100%;
+    height: 502px;
+}
+.contain-right > p{
+    width: 404px;
+    line-height: 36px;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 30px;
+
+}
+.contain-right {
+    margin-top: 30px;
+    float: right;
+    width: 447px;
+}
+
+.licheng {
+    position: relative;
+    width: 100%;
+    height: 770px;
+    background-color: #F4FAFA;
+    background-image: url("../img/jianjie/licheng.png");
+    background-repeat: no-repeat;
+    background-position: center 212px;
+}
+
+.licheng > h3 {
+    font-size: 36px;
+    text-align: center;
+    padding-top: 82px;
+    font-weight:500;
+    color: #333333;
+}
+
+.licheng > p {
+    font-size: 14px;
+    text-align: center;
+    /*padding-top: 6px;*/
+}
+
+.oneleft{
+    position: absolute;
+    font-size: 22px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 82px;
+    width: 230px;
+    height: 82px;
+    background-color: #10417E;
+    top: 300px;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+}
+.oneleft>p{
+    font-size: 22px;
+    color: #333333;
+    position: absolute;
+    left: -580px;
+    top: 0px;
+}
+.oneleft:after{
+    content: ""; /*:before和:after必带技能，重要性为满5颗星*/
+    display: block;
+    position: absolute; /*日常绝对定位*/
+    width: 0;
+    height: 0;
+    left: -82px;
+    top: 0;
+    border: 41px solid transparent;
+    border-right-color: #10417E;
+}
+.oneright{
+    position: absolute;
+    font-size: 22px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 82px;
+    width: 230px;
+    height: 82px;
+    background-color: #10417E;
+    bottom: 0;
+    top: 499px;
+    right: 50%;
+}
+.oneright>p{
+    font-size: 22px;
+    color: #333333;
+    position: absolute;
+    right: -350px;
+    top: 0px;
+}
+.oneright:after{
+    content: ""; /*:before和:after必带技能，重要性为满5颗星*/
+    display: block;
+    position: absolute; /*日常绝对定位*/
+    width: 0;
+    height: 0;
+    right: -82px;
+    top: 0;
+    border: 41px solid transparent;
+    border-left-color: #10417E;
+}
+/*公司简介样式*/
+
+/*资质荣誉*/
+
+
+
+/*资质荣誉*/
+
+
+/*专业服务团队样式*/
+
+.team>h3,.contain>h5{
+    font-size: 36px;
+    color: #333333;
+    text-align: center;
+    padding: 40px 0;
+    font-weight: 500;
+}
+.team .ont{
+    margin-bottom: 50px;
+}
+.team .ont:last-child{
+    margin-bottom: 0px;
+}
+.team .ont h4{
+    font-size: 20px;
+    color: #333333;
+    padding-bottom: 10px;
+}
+.team .ont p{
+    font-size: 16px;
+    color: #666666;
+}
+
+/*专业服务团队样式*/
+
+
+/*免责声明*/
+
+.state>h3{
+    font-size: 36px;
+    color: #333333;
+    text-align: center;
+    padding: 40px 0;
+    font-weight: 500;
+}
+.state .txt p{
+    font-size: 18px;
+    margin-bottom: 36px;
+
+}
+.state .txt p:last-child{
+    margin-bottom: 0px;
+}
+
+/*免责声明*/
+
+
+/*联系我们*/
+.contact>h3{
+    font-size: 36px;
+    color: #333333;
+    text-align: center;
+    padding: 40px 0;
+    font-weight: 500;
+}
+.contact .txt p{
+    font-size: 18px;
+    padding-left: 36px;
+    color: #000000;
+    margin-bottom:36px;
+    background-repeat: no-repeat;
+    background-position:0 center ;
+}
+.contact .txt p:nth-child(1){
+    background-image: url("../img/lianxi/phone.png");
+    background-size: 23px 20px;
+}
+.contact .txt p:nth-child(2){
+    background-image: url("../img/lianxi/zhen.png");
+    background-size: 23px 24px;
+}
+.contact .txt p:nth-child(3){
+    background-image: url("../img/lianxi/email.png");
+    background-size: 24px 20px;
+}
+.contact .txt p:nth-child(4){
+    background-image: url("../img/lianxi/http.png");
+    background-size: 25px 26px;
+}
+.contact .txt p:nth-child(5){
+    background-image: url("../img/lianxi/add.png");
+    background-size: 20px 24px;
+}
+.contact .txt p:nth-child(6){
+    background-image: url("../img/lianxi/car.png");
+    background-size: 21px 24px;
+}
+.contact>img{
+    width: 894px;
+    height: 612px;
+}
+/*联系我们*/
+.footer{
+    margin-top: 0px;
+}
+.right>p>a:hover{
+    color: #10417E;
+}
+
+

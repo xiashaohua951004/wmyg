@@ -1,0 +1,317 @@
+{% extends "common/base.html" %}
+
+{% block title %}
+{{data.thisObj.title}}
+{% endblock %}
+
+{% block style %}
+
+<link rel="stylesheet" href="/public/css/newbofore.css">
+{% endblock %}
+
+{% block content %}
+<!--内容-->
+
+<div class="container clearfix" style="margin-top: 30px;">
+    <div class="newlist">
+        <div class="nav">
+            <ul class="clearfix">
+                <li class="first">
+
+                    <h3>新闻中心</h3>
+
+                    <em class="em">News Center</em>
+
+                </li>
+                <!-- <li class="two" style="background: #10417e;">
+                            <a href="./4_1newlist.html?page=3" style="
+                            color: white;">行业咨讯</a>
+                        </li> -->
+                <li style="background: #10417e;">
+                    <a href="/news/list?columnId=1&page=3" style="color:white;">公司动态</a>
+                </li>
+                <li>
+                    <a href="/announce/list?columnId=2&page=3">公告通知</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="more">
+        <div class="title">
+        薇丁办公
+        </div>
+        <div class="cont">
+        <h6>让商业更高效</h6>
+        <div>
+        <img src="/public/img/newlist/newlis_03.jpg" width="150px" height="150px">
+        <br>
+        <span>IOS/Android下载</span>
+        </div>
+        </div>
+        </div>
+
+
+
+        <div class="lian">
+            <div class="title">
+                <h3>联系我们</h3>
+                <span class="tieler">Contact Us</span>
+            </div>
+
+            <div class="newinfo">
+                <p>地址 : 北京丰台区南四环西路188号<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（总部基地）18区20号楼8层</p>
+                <p>电话 : 400-658-5000</p>
+                <p>传真 : 010-53033781</p>
+                <p>邮箱 : kefu@weimengyungu.cn</p>
+                <p>
+                    网址 : www.weimengyungu.cn
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="listright">
+
+        <div class="menu">
+            <ol class="breadcrumb clearfix">
+                <li>您当前的位置</li>
+                <li>
+                    <a href="/?page=0">首页</a>
+                </li>
+                <li>
+                    <a href="/news/list?columnId=1&page=3">新闻中心</a>
+                </li>
+                <li>
+                    <a href="/news/list?columnId=1&page=3">公司动态</a>
+                </li>
+                <li>
+                    正文
+                </li>
+            </ol>
+        </div>
+
+
+        <h2>{{data.thisObj.title}}</h2>
+
+        <div class="clearfix">
+            <span>  来源：{{data.thisObj.source}}</span>
+            <span class="p1">
+                    时间：{{data.thisObj.pushtime}}
+            </span>
+        </div>
+
+
+        {% if data.thisObj.intro %}
+        <div class="p2">
+            <p>摘要：{{data.thisObj.intro}}</p>
+        </div>
+        {% endif %}
+        <!-- <div class="ps">
+            <img src="">
+        </div> -->
+
+        <div class="content" style="margin-top: 35px;">
+            {{data.thisObj.content|safe}}
+        </div>
+
+        <div class="listicon">
+            <ul class="clearfix" style="margin-top:-22px;">
+                    <li class="one" style="width:100px; height:1px;  margin-top:125px;"></li>
+                <li>
+                    <script type="text/javascript">
+                        (function () {
+                            var p = {
+                                url: location.href, /*获取URL，可加上来自分享到QQ标识，方便统计*/
+                                title: '{{data.thisObj.title}}', /*分享标题(可选)*/
+                                summary: '{{data.thisObj.intro | trim() | replace("\r\n","") }}', /*分享摘要(可选)*/
+                                style: '201',
+                                width: 32,
+                                height: 32
+                            };
+                            var s = [];
+                            for (var i in p) {
+                                s.push(i + '=' + encodeURIComponent(p[i] || ''));
+                            }
+                            document.write(['<a class="qcShareQQDiv s1" href="http://connect.qq.com/widget/shareqq/index.html?', s.join('&'), '" target="_blank"></a>'].join(''));
+                        })();
+                    </script>
+                </li>
+                <li>
+                    <a href="" class="s2">
+
+                    </a>
+                    <div class="wei">
+                        <span class="paren">扫码后分享至好友或朋友圈</span>
+                        <div class="img">
+
+                        </div>
+                    </div>
+                </li>
+                <!--微博暂时没开通-->
+                <!--<li>-->
+                    <!--<a href="" class="s3">-->
+
+                    <!--</a>-->
+                <!--</li>-->
+                <!--微博暂时没开通-->
+                <li>
+                    <script type="text/javascript">
+                        (function () {
+                            var p = {
+                                url: location.href, /*获取URL，可加上来自分享到QQ标识，方便统计*/
+                                title: '{{data.thisObj.title}}', /*分享标题(可选)*/
+                                summary: '{{data.thisObj.intro | trim()| replace("\r\n","") }}', /*分享摘要(可选)*/
+                                showcount: '0', /*是否显示分享总数,显示：'1'，不显示：'0' */
+                                style: '201',
+                                width: 39,
+                                height: 39
+                            };
+                            var s = [];
+                            for (var i in p) {
+                                s.push(i + '=' + encodeURIComponent(p[i] || ''));
+                            }
+                            document.write(['<a version="1.0" class="qzOpenerDiv s4" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?', s.join('&'), '" target="_blank"></a>'].join(''));
+                        })();
+                    </script>
+                </li>
+
+                <li class="one" style="width:100px; height:1px; margin-top:125px; margin-left:35px;"></li>
+            </ul>
+        </div>
+        <br>
+
+        <div class="pagesize" style="margin-bottom:99px;">
+            <ol class="ol clearfix">
+                <li style="margin-bottom: 8px;">
+                    {% if data.previousObj %}
+                    <a href="/news/detail?id={{data.previousObj.newsId}}&page=3" class="act">
+                        上一篇：
+                        {{data.previousObj.title}}
+                    </a>
+                    {% else %}
+                    <a>上一篇： 没有了</a>
+                    {% endif %}
+                </li>
+
+                <li>
+                    {% if data.nextObj %}
+                    <a href="/news/detail?id={{data.nextObj.newsId}}&page=3">下一篇：
+                        {{data.nextObj.title}}
+                    </a>
+                    {% else %}
+                    <a>下一篇： 没有了</a>
+                    {% endif %}
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+
+<div class="top">
+
+        <img src="/public/img/index/top.png" class="img1">
+        <span class="sp">返回<br>顶部</span>
+      
+    </div>
+<!--内容-->
+
+{% endblock %}
+
+
+{% block script %}
+<script type="text/javascript" src="/public/js/jquery.qrcode.min.js"></script>
+<script>
+    $(function () {
+
+        //分享朋友圈二维码
+        $(".img").qrcode({
+            render: "canvas",
+            width: 170,
+            height: 170,
+            text: window.location.href
+        });
+
+
+
+        $(".listicon ul li .s1").mouseenter(function () {
+
+            $(this).css("background", "url('/public/img/newlist/02.png')");
+        })
+        $(".listicon ul li .s1").mouseleave(function () {
+
+            $(this).css("background", "");
+        })
+
+
+        $(".listicon ul li .s2").mouseenter(function () {
+
+            $(this).css("background", "url('/public/img/newlist/04.png')");
+            $(".wei").stop().show();
+        })
+        $(".listicon ul li .s2").mouseleave(function () {
+
+            $(this).css("background", "");
+            $(".wei").hide();
+        })
+
+
+        $(".listicon ul li .s3").mouseenter(function () {
+
+            $(this).css("background", "url('/public/img/newlist/06.png')");
+        })
+        $(".listicon ul li .s3").mouseleave(function () {
+
+            $(this).css("background", "");
+        })
+
+
+        $(".listicon ul li .s4").mouseenter(function () {
+
+            $(this).css("background", "url('/public/img/newlist/08.png')");
+        })
+        $(".listicon ul li .s4").mouseleave(function () {
+
+            $(this).css("background", "");
+        })
+
+
+        $(window).scroll(function () {
+            var screen = $(window).height();
+            if ($(window).scrollTop() > screen) {
+                $(".top").fadeIn(1000)
+            } else {
+                $(".top").fadeOut(1000);
+            }
+        })
+
+        $(".top").click(function () {
+
+            $("html,body").animate({scrollTop: 0}, 500);
+        })
+
+
+$(".top").mouseenter(function () { 
+    $(this).find(".img1").hide();
+    $(this).find(".sp").show().css("display","block");
+ })
+
+$(".top").mouseleave(function () { 
+    $(this).find(".img1").show();
+    $(this).find(".sp").hide();
+
+ })
+
+
+
+
+
+
+    })
+</script>
+
+{% endblock %}

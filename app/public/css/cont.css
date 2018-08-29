@@ -1,0 +1,43 @@
+
+
+.contain .wrapp{
+    width:890px;
+    margin:10px auto;
+}
+.slide {
+    height:500px;
+    position: relative;
+}
+/* .slide ul{
+    /* height: 500px; */
+/* }  */
+.slide li{
+    position: absolute;
+    left:200px;
+    top:0;
+}
+.slide li img{
+    width:100%;
+}
+
+.prev,.next{
+    width:76px;
+    height:112px;
+    position: absolute;
+    top:50%;
+    margin-top:-56px;
+    background: url("../img/08/996.png") no-repeat;
+    transform: rotate(180deg);
+    z-index: 99;
+}
+.next{
+    right:0;
+    background-image: url("../img/08/996.png");
+    transform-origin: center center;
+    transform: rotate(360deg);
+    margin-top: 0;
+  
+}
+
+
+

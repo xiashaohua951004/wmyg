@@ -1,0 +1,420 @@
+
+
+.container .newlist{
+float: left;
+width: 260px;
+
+}
+.container .newlist .nav ul li{
+    font-size: 18px;
+    line-height: 60px;
+    height: 60px;
+    background: #f2f2f2;
+    text-align: center;
+}
+.container .newlist .nav ul li a{
+    color: #11407c;
+   
+}
+
+.container .newlist .nav ul li.first{
+    display: block;
+height: 93px;
+width: 260px;
+background: #00a261;
+text-align: center;
+
+padding: 0;
+color: white;
+font-size: 18px;
+}
+.container .newlist .nav ul li.first h3{
+
+padding-top: 10px;
+    text-align: center;
+   
+
+  
+
+}
+.container .nav ul .first .em{
+    padding: 0;
+    margin: 0;
+    display: block;
+    /* /* width: 87px;
+    height: 11px; */
+     height: 15px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: -33px; 
+ 
+}
+
+
+.container .newlist .nav ul li a:hover
+{
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    color: white;
+text-decoration: none;
+background: #10417e;
+
+}
+
+
+    .container .newlist .more {
+        width: 260px;
+        height: 285px;
+        background: #f2f2f2;
+        margin-top: 17px;
+    }
+    .container .newlist .more .title{
+        padding-top: 22px;
+        padding-left: 21px;
+        font-size: 18px;
+        color: #333333;
+     
+    }
+    .container .newlist .more .cont h6{
+        /* text-align: center;
+      
+        font-size: 14px;
+       
+        margin-top: 18px;
+        color: #333333;
+        margin-bottom: 10px; */
+
+
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+        margin-top: 10px;
+        color: #333333;
+        margin-bottom: 5px;
+    }
+    .container .newlist .more .cont div {
+        width: 157px;
+        height: 151px;
+        margin-left: 53px;
+        margin-right: 53px;
+        text-align: center;
+    
+    }
+    .container .newlist .more .cont div span{
+    padding-top: 10px;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #333333;
+    }
+    .container .newlist .lian{
+        height:274px;
+        width: 260px;
+        background: #f2f2f2;
+        margin-top: 17px;
+
+    }
+    .container .newlist .lian .title{
+        height: 93px;
+    
+        background: #00a261;
+    
+    }
+    .container .newlist .lian .title h3{
+        text-align: center;
+     
+        color: white;
+        padding-top: 27px;
+        font-size: 20px;
+    }
+    .container .newlist .lian .title .tieler{
+margin-top: -4px;
+    display: block;
+  color: white;
+    text-align:center;
+    width: 100%;
+    font-size: 14px;
+
+    }
+    .container .newlist .lian p{
+    
+       font-size: 14px;
+       color: #333333;
+       padding-left: 15px;
+      
+    }
+    .container .newlist .lian .newinfo {
+      width: 100%;
+      margin-top: 22px;
+      margin-bottom: 32px;
+     
+     }
+     .container .newlist .lian .newinfo p{
+         padding-left: 17px;
+    padding-right: 1px;
+    line-height: 22px;
+     } 
+
+
+   
+
+
+    
+
+
+
+    .container .listright {
+ 
+ 
+    float: left;
+    margin-left: 40px;
+    }
+.container .listright {
+    float: left;
+    width: 880px;
+    margin-left: 29px;
+}
+.container .listright .menu{
+
+margin-top: -25px;
+}
+
+.container .listright h2{
+    font-size: 40px;
+    color: #333333;
+}
+.container .listright div>span{
+    color: #999999;
+    font-size: 18px;
+    float: left;
+    margin-top: 10px;
+}
+.container .listright div .p1{
+    margin-left: 43px;
+    
+}
+
+.container .listright .p2{
+  
+    margin-top: 59px;
+    /* color: #000000; 
+     font-size: 16px; 
+     line-height: 30px; */
+  
+  
+}
+.container .listright .p2 p{
+    font-size:20px;
+    color: #000000;
+    text-indent: 2em;
+}
+.container .listright .ps{
+    margin-top: 38px;
+}
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+  }
+  .breadcrumb > li {
+    display: inline-block;
+  }
+  
+/* .container .listright p{
+    text-indent: 2em;
+    font-size: 22px;
+    color: #000000;
+    line-height: 37px;
+} */
+
+.container .listright .listicon ul{
+    width: 500px;
+  
+    margin: 0 auto;
+    margin-top: 99px;
+    margin-left: 192px;
+}
+.container .listright .content{
+    margin-top: 50px;
+ 
+}
+.container .listright .content p{
+    margin-top: 35px;
+   
+}
+.listicon{
+    height: 147px;
+}
+.container .listright .listicon ul li{
+    float: left;
+    position: relative;
+    margin-top: 99px;
+}
+.container .listright .listicon ul li a{
+    display: block;
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-left: 40px;
+  
+}
+.container .listright .listicon ul li a.s1{
+    background: url("../img/newlist/01.png");
+}
+
+
+.container .listright .listicon ul li a.s2{
+    background: url("../img/newlist/03.png");
+}
+.container .listright .listicon ul li a.s3{
+    background: url("../img/newlist/05.png");
+}
+.container .listright .listicon ul li a.s4{
+    background: url("../img/newlist/07.png");
+}
+
+.wei{
+    position: absolute;
+    display: none;
+    width: 220px;
+    height: 254px;
+    background: #477CBD;
+    border-radius: 4px;
+    left: -48px;
+    top: -256px;
+    background: url("../img/newlist/weibo.png") no-repeat;
+}
+
+.wei .img{
+    width: 170px;
+    height: 170px;
+    margin:0 auto;
+}
+.container .listright .listicon ul li .wei .paren{
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #333333;
+}
+.container .listright .listicon ul li .wei .ling{
+    font-size: 50px;
+    position: absolute;
+    left: 90px;
+    bottom: -34px;
+    color: #477CBD
+}
+
+
+.wei img{
+    width: 170px;
+height: 170px;
+margin: 0px 10px 17px 10px;
+margin-left: 20px;
+}
+
+
+
+
+.container .listright .menu .breadcrumb{
+    background: white;
+    border-bottom: 1px solid #ccc;
+    width: 870px;
+    border-radius: 0px;
+}
+.container .listright .menu .breadcrumb li{
+font-size: 16px;
+color: #333333;        
+}
+.container .listright .menu .breadcrumb li a{
+    font-size: 16px;
+    color: #333333;        
+        }
+
+        .container .listright .menu .breadcrumb li a:hover{
+            color: #10417e;
+        
+
+
+        }
+
+
+.breadcrumb {
+    margin-top: 20px;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.breadcrumb > li + li:before {
+    padding: 0 3px;
+    color: #333333;
+    content: ">"
+
+}
+
+
+
+.container .listright .pagesize .ol{
+    margin-top: 80px;
+}
+.container .listright .pagesize .ol li a{
+    display: block;
+    width: 700px;
+    font-size: 20px;
+    line-height: 40px;
+    height: 30px;
+    color: #333333;
+    text-decoration: none;
+    text-overflow:ellipsis;overflow:hidden;white-space:nowrap;
+}
+
+.container .listright .pagesize .ol li a:hover{
+    color: #10417e;
+}
+
+.top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 45px;
+    bottom: 30px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 6px;
+    
+}
+
+.top .sp{
+    background: white;
+    box-sizing: border-box;
+    display: none;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 16px;
+    width: 60px;
+    height: 60px;
+    padding-top: 5px;
+    border-radius: 6px;
+    /* margin-left: 15px; */
+    text-align: center;
+  
+  
+    box-shadow: 0px 2px 6px 2px rgba(16, 65, 126, 0.2) 
+}
+
+
+.listicon ul .one{
+    width: 100px;
+    height: 1px;
+    background: #ccc;
+}

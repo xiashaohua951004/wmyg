@@ -1,0 +1,176 @@
+.weiding {
+    width: 100%;
+    height: 678px;
+
+    background-size: 100% 678px;
+    position: relative;
+    background-image: url("../img/weidingbangong/banner.png");
+
+}
+
+.weiding .container {
+    width: 965px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.weiding .container .inerleft {
+    padding-top: 174px;
+    float: left;
+
+}
+
+.weiding .container .inerleft h2 {
+    font-size: 64px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: -10px;
+
+}
+
+.weiding .container .inerleft h2 span {
+    font-size: 64px;
+    font-weight: lighter;
+    color: white;
+}
+
+.weiding .container .inerleft h4 {
+
+    font-size: 26px;
+
+    color: white;
+
+}
+
+.weiding .container .inerleft .list{
+    width: 390px;
+    float: left;
+    margin-top: 54px;
+
+}
+.weiding .container .inerleft .list .li_two{
+    margin-top: 17px;
+}
+.weiding .container .inerleft .list ul li{
+    border-radius: 6px;
+}
+.weiding .container .inerleft .list ul li a {
+    display: block;
+    width: 202px;
+    text-align: center;
+    font-size: 26px;
+    border-radius: 5px;
+    text-align: center;
+    color: #000000;
+   
+    height: 60px;
+    line-height: 60px;
+  
+cursor: pointer;
+overflow: hidden;
+
+}
+
+/* 
+.weiding .container .inerleft .list ul li:nth-child(1) {
+    margin-top: 34px;
+
+} */
+
+.weiding .container .inerleft .list ul li {
+    background: white;
+    cursor: pointer;
+
+}
+
+.weiding .container .inerleft .list ul li a:hover {
+    background: #477dbe;
+    color: white;
+}
+
+
+.weiding .container .inerleft .list .xi_right{
+    width: 143px;
+    height: 143px;
+    margin-left: 44px;
+    background: white;
+    border-radius: 6px;
+
+}
+.weiding .container .inerleft .list .xi_right img {
+    display: inline-block;
+    margin: 12px;
+}
+.weiding .right_wei {
+
+    width: 374px;
+    height: 711px;
+    position: absolute;
+    right: 72px;
+    top: 103px;
+}
+
+/* .weiding .inerright{
+  margin-top: -281px;
+} */
+.content {
+    height: 772px;
+}
+
+.content .container {
+    position: relative;
+}
+
+.content .content_l {
+    position: absolute;
+    top: 186px;
+    z-index: 9999;
+    left: 100px;
+}
+
+.content .content_2 {
+
+    position: absolute;
+    top: 185px;
+    z-index: 9999;
+    right: 100px;
+}
+
+.content .info {
+
+    position: absolute;
+    top: 180px;
+    z-index: 9999;
+    left: 100px;
+}
+
+.content .container .content_r {
+
+    /* margin-left: 134px; */
+    margin-top: 324px;
+}
+
+.content .container .fl {
+    margin-left: 140px;
+}
+
+.content .container .content_r h1 {
+    font-size: 60px;
+    color: #333333;
+}
+.content .container .content_r ul li {
+    font-size: 30px;
+    color: #333333;
+    list-style: none;
+    width: 590px;
+    word-wrap: break-word;
+}
+.content .container .content_r ul li:nth-child(1) {
+    margin-top: 33px;
+}
+
+.tr2 {
+    background: #f3fbf9;
+}

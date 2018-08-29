@@ -1,0 +1,442 @@
+.ff {
+    width: 100%;
+    height: 400px;
+
+}
+
+.bannerf {
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/newlist/ddd.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+
+.container .newlist {
+    float: left;
+    width: 260px;
+
+}
+
+.container .newlist .nav ul li {
+    font-size: 18px;
+    line-height: 60px;
+    height: 60px;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+.container .newlist .nav ul li a {
+    color: #11407c;
+
+}
+
+.container .newlist .nav ul li.first {
+    display: block;
+    height: 90px;
+    width: 260px;
+    background: #00a261;
+    text-align: center;
+
+    padding: 0;
+    color: white;
+    font-size: 18px;
+}
+
+.container .newlist .nav ul li.first .h3 {
+
+    padding-top: 11px;
+    text-align: center;
+    height: 20px;
+    font-size: 20px;
+
+}
+
+.container .nav ul .first .em {
+
+    display: block;
+    /* width: 87px;
+    height: 11px; */
+    height: 15px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 8px;
+
+}
+
+.container .newlist .nav ul li a:hover {
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    color: white;
+    text-decoration: none;
+    background: #10417e;
+
+}
+
+.container .newlist .more {
+    width: 260px;
+    height: 285px;
+    background: #f2f2f2;
+    margin-top: 17px;
+}
+
+.container .newlist .more .title {
+    padding-top: 22px;
+    padding-left: 21px;
+    font-size: 18px;
+    color: #333333;
+
+}
+
+.container .newlist .more .cont h6 {
+    text-align: center;
+    line-height: 30px;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    color: #333333;
+    margin-bottom: 5px;
+
+}
+
+.container .newlist .more .cont div {
+    width: 157px;
+    height: 151px;
+    margin-left: 53px;
+    margin-right: 53px;
+    text-align: center;
+
+}
+
+.container .newlist .more .cont div span {
+    padding-top: 10px;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #333333;
+}
+
+.container .newlist .lian {
+    height: 274px;
+    width: 260px;
+    background: #f2f2f2;
+    margin-top: 17px;
+
+}
+
+.container .newlist .lian .title {
+    height: 93px;
+
+    background: #00a261;
+
+}
+
+.container .newlist .lian .title h3 {
+    text-align: center;
+
+    color: white;
+    padding-top: 27px;
+    font-size: 20px;
+}
+
+.container .newlist .lian .title .tieler {
+
+    display: block;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.container .newlist .lian p {
+
+    font-size: 14px;
+    color: #333333;
+    padding-left: 15px;
+
+}
+
+.container .newlist .lian .newinfo {
+    width: 100%;
+    margin-top: 22px;
+    margin-bottom: 32px;
+
+}
+
+.container .newlist .lian .newinfo p {
+    padding-left: 17px;
+    padding-right: 1px;
+    line-height: 22px;
+}
+
+.container .listright {
+    float: left;
+    margin-left: 40px;
+}
+
+.container .listright .menu .breadcrumb {
+    background: white;
+    border-bottom: 1px solid #EEEEEE;
+    width: 870px;
+    border-radius:0px;
+}
+
+.container .listright .menu .breadcrumb li {
+    font-size: 16px;
+    color: #333333;
+}
+
+.container .listright .menu .breadcrumb li a {
+    font-size: 16px;
+    color: #333333;
+}
+
+.container .listright .menu .breadcrumb li a:hover {
+    font-size: 16px;
+    color: #10417E;
+    text-decoration: none;
+}
+
+.container .listright .contentt {
+    width: 100%;
+    height: 164px;
+    margin-top: 33px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.container .listright .contentt .car_left {
+    width: 686px;
+    float: left;
+    height: 145px;
+}
+
+.container .listright .contentt .car_left h3 a {
+    display: block;
+    width: 660px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #333333;
+    text-overflow:ellipsis;overflow:hidden;white-space:nowrap;
+
+}
+
+.container .listright .contentt .car_left h3 a:hover {
+    color: #10417E;
+}
+
+.container .listright .contentt .car_left p {
+    font-size: 18px;
+    padding-right: 25px;
+    color: #999999;
+    padding-top: 12px;
+    height: 54px;
+}
+
+.container .listright .contentt .car_left div span {
+    padding: 0;
+    margin: 0;
+    margin-top: 12px;
+    display: inline-block;
+    font-size: 16px;
+    color: #b6b6b6;
+}
+
+/* .container .listright .contentt .car_left div span{
+    color: #b6b6b6;
+} */
+.container .listright .contentt .car_right a{
+    display: block;
+    float: right;
+    width: 182px;
+    height: 128px;
+    margin-left: 0px;
+
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+
+}
+
+.container .listright .contentt .car_right img {
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    transition: all 1s;
+}
+
+.container .listright .contentt .car_right img:hover {
+
+    transform: scale(1.5, 1.5);
+
+}
+
+.container .listright .page {
+    width: 520px;
+    margin: 0 auto;
+    margin-top: 96px;
+}
+
+.container .listright .page .pagination li {
+    float: left;
+}
+
+.container .listright .page .pagination li a {
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-left: 12px;
+    line-height: 48px;
+    text-align: center;
+
+}
+
+.container .listright .page .pagination li a.current {
+    background: #10417e;
+    color: white;
+}
+
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.breadcrumb > li {
+    display: inline-block;
+}
+
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #333333;
+    content: ">";
+}
+
+.weibu {
+    width: 100%;
+    height: 454px;
+    background: #10417e;
+
+}
+
+.weibu .container .weibu_1 {
+    margin-top: 75px;
+    float: left;
+    height: 260px;
+}
+
+.weibu .container .weibu_1 ul li {
+    float: left;
+    width: 173px;
+}
+
+.weibu .container .weibu_1 ul li:nth-child(1) {
+    margin-left: 0px;
+}
+
+.weibu .container .weibu_1 ul li a {
+    color: white;
+    font-size: 20px;
+}
+
+.weibu .container .weibu_1 ul li .list li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #f4f7f9;
+}
+
+.weibu .container .weibu_2 {
+
+    margin-top: 75px;
+    height: 260px;
+}
+
+.weibu .container .weibu_2 ul li {
+    float: left;
+    width: 100px;
+}
+
+.weibu .container .weibu_2 ul li img {
+    float: left;
+    width: 100%;
+}
+
+.weibu .container .weibu_2 ul li a span {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.weibu .container .weibu_2 ul li:nth-child(2) {
+    margin-left: 45px;
+}
+
+.weibu .container .footer_bottom p {
+    text-align: center;
+    font-size: 14px;
+    color: #7c9bc0;
+}
+
+.top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 45px;
+    bottom: 30px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 6px;
+    
+}
+
+.top .sp{
+    background: white;
+    box-sizing: border-box;
+    display: none;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 16px;
+    width: 60px;
+    height: 60px;
+    padding-top: 5px;
+    border-radius: 6px;
+    /* margin-left: 15px; */
+    text-align: center;
+  
+  
+    box-shadow: 0px 2px 6px 2px rgba(16, 65, 126, 0.2) 
+}
+
+
+
+
+.oto{
+    width: 175px;
+    height: 119px;
+    margin-top: 160px;
+    margin-left: 353px;
+}
+
+

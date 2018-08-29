@@ -1,0 +1,255 @@
+{% extends "common/base.html" %}
+
+{% block title %}
+公司动态
+{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="/public/css/newlist.css">
+{% endblock %}
+
+{% block content %}
+<!--内容-->
+
+<div class="bannerf">
+
+</div>
+
+
+<div class="container clearfix" style="margin-top:30px;">
+    <div class="newlist">
+        <div class="nav">
+            <ul class="clearfix">
+                <li class="first">
+
+                    <h3 class="h3">新闻中心</h3>
+
+                    <em class="em">News Center</em>
+
+                </li>
+
+                <li style="background: #10417e;">
+                    <a href="/news/list?columnId=1&page=3" style="color:white;">公司动态</a>
+                </li>
+                <li>
+                    <a href="/announce/list?columnId=2&page=3">公告通知</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="more">
+        <div class="title">
+        薇丁办公
+        </div>
+        <div class="cont">
+        <h6>让商业更高效</h6>
+        <div>
+        <img src="/public/img/newlist/newlis_03.jpg" width="150px" height="150px">
+        <br>
+        <span>IOS/Android下载</span>
+        </div>
+        </div>
+        </div>
+
+
+
+
+        <div class="lian">
+            <div class="title">
+                <h3>联系我们</h3>
+                <span class="tieler">Contact Us</span>
+            </div>
+
+            <div class="newinfo">
+                <p>地址 : 北京丰台区南四环西路188号<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;（总部基地)18区20号楼8层</p>
+                <p>电话 : 400-658-5000</p>
+                <p>传真 : 010-53033781</p>
+                <p>邮箱 : kefu@weimengyungu.cn</p>
+                <p>
+                    网址 : www.weimengyungu.cn
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="listright">
+
+        <div class="menu">
+            <ol class="breadcrumb clearfix">
+                <li>您当前的位置</li>
+                <li>
+                    <a href="/?page=0">首页</a>
+                </li>
+                <li>
+                    <a href="/news/list?columnId=1&page=3">新闻中心</a>
+                </li>
+                <li>
+                    公司动态
+                </li>
+            </ol>
+        </div>
+
+
+        {% for item in data.thisPage.list %}
+        <div class="contentt">
+            <div class="car_left">
+                <h3>
+                    <a href="/news/detail?id={{item.newsId}}&page=3" target="_blank">{{item.title}}</a>
+                </h3>
+                <p>{{item.intro | truncate(60)}}</p>
+                <div>
+                    <span>来源：{{item.source}}</span>
+                    <span style="float: right; padding-right: 30px;">{{item.pushtime}}</span>
+                </div>
+            </div>
+            <div class="car_right">
+                <a href="/news/detail?id={{item.newsId}}&page=3" target="_blank">
+                <img src="{{item.titlePic}}">
+                </a>
+            </div>
+        </div>
+        {% else %}
+        <!-- 无数据 -->
+        <div class="oto"><img src="/public/img/newlist/wu.png"></div>
+
+        {% endfor %}
+
+
+        <!-- <div class="contentt">
+                <div class="car_left">
+                    <h3>
+                        <a href="/gongsinews/detail?page=3">同仁堂互联网全面战略合作</a>
+                    </h3>
+                    <p>Vue.js - The Progressive JavaScript Framework... Vue Loader地址:北京丰台区南四环西路188号(总部基地)18区20号楼8层.....</p>
+                    <div>
+                        <span>来源：中国经济学人</span>
+                        <span style="float: right; padding-right: 30px;">2018-4-21</span>
+                    </div>
+                </div>
+
+
+                <div class="car_right">
+                    <img src="/public/img/newlist/newlis_06.png">
+                </div>
+            </div>
+
+            <div class="page">
+                <!-- 分页 -->
+        <div class="headline_paging">
+            {% if data.thisPage.pages > 1 %}
+            <div class="paging">
+                <div id="pager" data-page-count="{{data.thisPage.pages}}" data-page-total="{{data.thisPage.total}}"
+                     data-page-num="{{data.thisPage.pageNum}}"></div>
+            </div>
+            {% else %}
+            <div class="">
+
+            </div>
+            {% endif %}
+        </div>
+        <!-- 分页 -->
+    </div>
+
+    <!-- </div> -->
+
+</div>
+
+<div class="top">
+
+    <img src="/public/img/index/top.png" class="img1">
+    <span class="sp">返回<br>顶部</span>
+  
+</div>
+
+
+
+
+<!--内容-->
+
+{% endblock %}
+
+
+{% block script %}
+<script type="text/javascript" src="/public/js/jquery.pagination.js"></script>
+<script>
+    $(function () {
+        $(window).scroll(function () {
+            var screen = $(window).height();
+            if ($(window).scrollTop() > screen) {
+                $(".top").fadeIn(500)
+            } else {
+                $(".top").fadeOut(500);
+            }
+        })
+
+ 
+$(".top").mouseenter(function () { 
+    $(this).find(".img1").hide();
+    $(this).find(".sp").show().css("display","block");
+ })
+
+$(".top").mouseleave(function () { 
+    $(this).find(".img1").show();
+    $(this).find(".sp").hide();
+
+ })
+
+
+
+        $(".top").click(function () {
+
+            $("html,body").animate({scrollTop: 0}, 500);
+        })
+
+
+        /*获取url参数*/
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+
+        //分页
+        var $pager = $("#pager");
+        var pageCount = $pager.data("page-count");
+        var total = $pager.data("page-total");
+        var pageNum = $pager.data("page-num");
+        $pager.pagination({
+            pageCount: pageCount,
+            totalData: total,
+            current: pageNum,
+            coping: true,
+            homePage: '首页',
+            endPage: '末页',
+            prevContent: '上一页',
+            nextContent: '下一页',
+            callback: function (api) {
+                var num = api.getCurrent();
+                var thisHref = window.location.href;
+                var hrefPageNum = getQueryString("pageNum");
+                if (hrefPageNum == null) {
+                    hrefPageNum = num;
+                    if (window.location.search == "") {
+                        window.location.href = thisHref + "?pageNum=" + hrefPageNum;
+                    } else {
+                        window.location.href = thisHref + "&pageNum=" + hrefPageNum;
+                    }
+                } else {
+                    window.location.href = thisHref.replace("pageNum=" + hrefPageNum, "pageNum=" + num);
+                }
+            }
+        });
+
+
+
+
+    })
+</script>
+
+{% endblock %}

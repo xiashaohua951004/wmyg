@@ -1,0 +1,282 @@
+{% extends "common/base.html" %}
+{% block title %}
+微盟云谷
+{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="public/css/swiper-4.3.3.min.css">
+<link rel="stylesheet" href="public/css/index.css">
+<link rel="stylesheet" href="public/css/banner.css">
+
+{% endblock %}
+
+{% block content %}
+<!--内容-->
+<div class="banner">
+    <div id="flash">
+        <div class="slide ido">
+            <div class="content">
+                <ul class="j_slideLists">
+                    {% for item in data.board1List %}
+                    <li>
+                        <a href="{{item.linkUrl|default('javascript:;',true)}}"
+                           style="background-image: url('{{item.image}}')">
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="tag">
+                <ul class="j_slideTags">
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    {% if data.announce2List.length > 0%}
+
+    <div class="notice">
+        <div class="container clearfix">
+            <div class="notice_1">
+
+                <i class="glyphicon glyphicon-volume-up">
+                    <img src="/public/img/index/df_03.png" alt="icon" width="20" height="20">
+                    <span class="gonggao">公告通知 : </span>
+                </i>
+                
+                <div class="list" style="width: 700px;">
+                    <div class="swiper-container swiper-container-vertical" id="news" style="height:50px;">
+                        <div class="swiper-wrapper"
+                             style="transition-duration: 200ms; transform: translate3d(0px, -40px, 0px);"
+                             style="height:40px;">
+                            
+                            {% for item in data.announce2List %}
+                            <div class="swiper-slide swiper-slide-duplicate-active" data-swiper-slide-index="0"
+                                 style="height: 40px;">
+                                <a class="main_a" href="/announce/detail?id={{item.newsId}}&page=3"
+                                   style="height: 50px;">{{item.title}}</a>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notice_2">
+                <a href="/announce/list?columnId=2&page=3">查看更多>></a>
+            </div>
+
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+
+<div class="container clearfix">
+    <div class="left">
+        <h2>薇丁办公APP</h2>
+        <h4>让商业更高效</h4>
+        <div>
+            <a href="/static/2weidingbangong?page=1" class="current">查看详情</a>
+        </div>
+    </div>
+    <div class="rihgt">
+        <div class="main">
+            <img src="/public/img/index/iPhoneX-Mockup.png">
+        </div>
+
+    </div>
+</div>
+
+<div class="content_1">
+    <div class="container">
+        <div class="title">
+            <h2>核心价值</h2>
+            <br>
+            <span>Core Values</span>
+        </div>
+    </div>
+
+    <div class="containerr" style="height:500px;">
+        <div class="menu">
+            <ul class="clearfix">
+                <li>
+                    <a>
+                        <img src="/public/img/index/zhi.png">
+                    </a>
+                    <br>
+                    <b>智能</b>
+                    <br>
+                    <span>互联网前沿应用技术</span>
+
+                </li>
+                <li>
+                    <a>
+                        <img src="/public/img/index/lian.png"> </a>
+                    <br>
+                    <b>连接</b>
+                    <br>
+                    <span>连接资源与需求方</span>
+
+                </li>
+                <li>
+                    <a>
+                        <img src="/public/img/index/ser.png">
+                    </a>
+                    <br>
+                    <b>服务</b>
+                    <br>
+                    <span>便捷·高效·智慧</span>
+
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="newList">
+    <div class="containerq">
+        <div class="title">
+            <h3>公司动态</h3>
+            <br>
+            <span>Company News</span>
+        </div>
+
+        <ul class="tablist clearfix">
+            {% for item in data.news1List %}
+            <li>
+                <a href="/news/detail?id={{item.newsId}}&page=3">
+                    <img src="{{item.titlePic}}" width="100%" height="248px">
+                    <div>
+                        <b>{{item.title}}</b>
+                        <br>
+                        <span style="display:block;margin-top:-12px;">{{item.pushtime}}</span>
+                        <br>
+                        <p>{{item.intro | truncate(40)}}</p>
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <div class="more">
+            <a href="/news/list?columnId=1&page=3">查看更多>></a>
+        </div>
+
+    </div>
+</div>
+
+<div class="ding">
+    <div class="menu clearfix">
+        <ul class="clearfix">
+            <li class="li1">
+                <a href="javascript:;" id="guo">
+                    <img src="/public/img/index/te.png">
+                    <span class="span1">客服电话</span>
+                </a>
+                <div class="tel" id="tel">
+                    400-658-5000
+                </div>
+            </li>
+
+            <li class="li2">
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=3205429301&site=qq&menu=yes" target="_blank">
+                    <img src="/public/img/index/ting.png">
+                    <span class="span2">在线客服</span>
+                </a>
+            </li>
+            <li class="li3">
+                <a href="javascript:;" class="top">
+                    <img src="/public/img/index/top.png">
+                    <span class="span3">返回顶部</span>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<!--内容-->
+
+{% endblock %}
+
+
+{% block script %}
+<script type="text/javascript" src="/public/js/index.js"></script>
+<script type="text/javascript" src="/public/js/jquery.slide.min.js"></script>
+<script src="/public/js/swiper-4.3.3.min.js"></script>
+
+<script>
+
+    $(function () {
+        $(".ido").slide({effect: "scrollx", seamless: "true", auto: true,});
+
+
+        // var mySwiper = new Swiper('#news', {
+        //     loop: true,
+        //     speed: 1000,
+
+        //     direction: 'vertical',
+        //     autoplay: {
+        //         delay: 3000,
+        //         stopOnLastSlide: false,
+
+        //     },
+        // });
+
+
+        var mySwiper = new Swiper('#news', {
+            loop: true,
+            speed: 1000,
+            autoplayDisableOnInteraction: false,
+            direction: 'vertical',
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+
+
+            },
+        })
+
+
+        $(".main_a").mouseenter(function () {//滑过悬停
+
+            mySwiper.autoplay.stop();
+        }).mouseleave(function () {//离开开启
+            mySwiper.autoplay.start(5000);
+        })
+
+
+        $(window).scroll(function () {
+            
+            var screen = $(window).height();
+            if ($(window).scrollTop() > screen) {
+                // $(".ding").fadeIn(1000)
+                $(".li3").fadeIn(1000);
+            } else {
+                $(".li3").fadeOut(1000);
+            }
+        })
+    })
+</script>
+
+<script>
+    var qq = document.getElementById('guo');
+    var ww = document.getElementById('tel');
+    timer = null;
+    qq.onmouseover = ww.onmouseover = function () {
+        ww.style.display = 'block';
+        clearInterval(timer);
+        /*目的：移动div1消失*/
+    }
+    qq.onmouseout = ww.onmouseout = function () {
+        timer = setTimeout(function () {
+            ww.style.display = 'none';
+        });
+    }
+</script>
+{% endblock %}

@@ -1,9 +1,7 @@
 # wmyg
 
 2018 7 12
-## 项目
-##使用
-egg.js
+
 ## QuickStart
 
 <!-- add docs here for user -->
